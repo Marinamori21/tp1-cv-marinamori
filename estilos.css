@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0%;
+	padding: 0%;
+	list-style: none;
+	box-sizing:border-box;
+}
+/*-----------------------------------------PROPIEDADES GENÉRICAS*/
+body {
+	background-color: #CAE9FF;
+	font-family:"lato", "sans serif";
+	color: #0F3375;
+	font-size:0.9375em;
+}
+section {
+	margin-bottom: 60px;
+}
+/*-----------------------------------------HEADER*/
+header h1 {
+	font-size: 0.75em;
+	margin-left: 1%;
+	}
+.botonera a{
+	width: 100%;
+	height: 20px;
+	color:#0F3375;
+	text-decoration: none;
+}
+.botonera img{
+	margin-left: 1%;
+}
+nav ul {
+	list-style: none;
+	font-size: 1.125em;
+	margin-left: 69%;
+}
+nav ul li{
+	display: inline;
+	padding: 10px;
+	margin-top: 20px;;
+	margin-right: 5%;
+	margin-bottom:20px;
+}
+.botonera:hover {
+	background-color: #CAE9FF;
+	color: #2382F7;
+}
+/*-----------------------------------------DESCRIPCIÓN*/
+.intro{
+	margin-top:40px;
+	margin-bottom: 8px;;
+	margin-left: 3%;
+}
+.tecuento{
+	font-size: 2.5em;
+	margin-left: 3%;
+	margin-bottom: 70px;
+}
+.banner{
+	margin-top: 150px;
+}
+.descripcion{
+	margin-top: 0;
+	margin-left: 0px;
+	margin-right:0px;
+	width: 65%;
+	height:145px;
+	padding:1%;
+	border-width: 1%;
+	border-color:#0F3375;
+	border-style:solid;
+	border-radius: 10px;
+}
+h2{
+	font-size:1.875em;
+	font-weight:900;
+}
+h3{
+	font-size:1.25em;
+	font-weight:900;
+	margin-left:3%;
+}
+.ola img{
+	margin-left: 3%;
+}
+.ola h3{
+	margin-top:110px;
+	}
+/*main h3 {
+	font-weight:900;
+	font-size: 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	}*/
+/*-----------------------------------------EXPERIENCIAS*/
+.lista p{
+	font-size: 1.0625em;
+	font-weight: 900;
+	margin-top:20px;
+	margin-bottom:20px;
+	border-bottom:solid;
+	}
+.lista h2{
+	margin-top:5px;
+	margin-bottom:6%;
+}
+.caja{
+	margin-top:40px;
+	margin-left: 5%;
+	width: 25%;
+	height:380px;
+	padding:1%;
+	border-width: 1%;
+	border-color:#0F3375;
+	border-style:solid;
+	border-radius: 10px;
+	display:flex;
+	margin: 0 auto;
+	justify-content: center;
+}
+/*-----------------------------------------FOOTER*/
+footer p{
+	margin-left: 3%;
+	color: white;
+}
+footer{
+	background-image:url("img/footer.png");
+	background-size:100% 100%;
+	backgroun-repeat:no-repeat;
+	width:100%;
+	height:200px;
+	display:flex;
+	align-items: flex-end;
+	padding-bottom: 20px;
+}
+article h2{
+	font-size: 0.9375em;
+}
+.formulario{
+	background-image:url("img/formulario.png");
+	background-size:100% 100%;
+	backgroun-repeat:no-repeat;
+	width:100%;
+	height:660px;
+	display:flex;
+	align-items: center;
+	padding-bottom: 20px;
+	margin-top:40px;
+}
+.formulario p{
+	margin-left: 3%;
+	color: white;
+	font-size:2.5em;
+	font-weight: 900;
+}
+/*-----------------------------------------FLEXBOX*/
+.skills{
+	margin-top: 3%;
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.marcas{
+	margin-top: 40px;
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.trabajos{
+	margin-top: 40px;
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.descripcion{
+	display:flex;
+	margin: 0 auto;
+	justify-content: center;
+}
+/*-----------------------------------------MEDIA QUERIE*/
+@media screen and (max-width: 600px) {
+	body {
+		font-size:0.75em;
+	}
+	.botonera img{
+		width: 50px;
+		height:50px;
+		background-image:url("img/logo.png");
+		background-repeat:no-repeat;
+		background-size:100% 100%
+	}
+	.botonera ul{
+		display:flex;
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.banner{
+		width:100%;
+		height:459px;
+		background-color:#CAE9FF;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	}
+	.tecuento{
+	font-size: 2.1875em;
+	}
+	.descripcion{
+	width: 60%;
+	height:240px;
+	padding:3%;
+	}
+	.caja{
+	width: 50%;
+	height:320px;
+	}
+	.marcas{
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		}
+	.trabajos{
+		display:flex;
+		flex-direction:column;
+		align-items: center;
+		margin-bottom:100px;
+	}
+	.formulario{
+		width:100%;
+		height:300px;
+		background-color:#CAE9FF;
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+	}
+	.formulario p{
+		font-size:1.375em;
+	}
+	footer{
+		width:100%;
+		height:150px;
+	}
+}
